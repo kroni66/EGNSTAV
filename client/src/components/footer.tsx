@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, MapPin, Phone, Mail } from "lucide-react";
+import logoPath from "@assets/EGN_stavby.webp";
 
 export default function Footer() {
   const scrollToSection = (sectionId: string) => {
@@ -19,7 +20,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
             <img 
-              src="/attached_assets/EGN_stavby.webp" 
+              src={logoPath} 
               alt="EGN STAVBY s.r.o." 
               className="h-12 w-auto"
             />

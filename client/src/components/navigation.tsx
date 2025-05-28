@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoPath from "@assets/EGN_stavby.webp";
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ export default function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img 
-              src="/attached_assets/EGN_stavby.webp" 
+              src={logoPath} 
               alt="EGN STAVBY s.r.o." 
               className="h-10 w-auto"
             />

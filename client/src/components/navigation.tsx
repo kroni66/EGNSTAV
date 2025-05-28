@@ -49,86 +49,59 @@ export default function Navigation() {
             </Link>
           </div>
 
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
+          <div className="hidden lg:block">
+            <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/">
-                <span className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium cursor-pointer">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
                   Domů
                 </span>
               </Link>
               
-              <DropdownMenu open={isServicesOpen} onOpenChange={setIsServicesOpen}>
-                <DropdownMenuTrigger asChild>
-                  <Button 
-                    variant="ghost" 
-                    className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium flex items-center h-auto font-normal"
-                    onMouseEnter={() => setIsServicesOpen(true)}
-                    onMouseLeave={() => setIsServicesOpen(false)}
-                  >
-                    Služby
-                    <ChevronDown className="ml-1 h-4 w-4" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent 
-                  className="bg-card border-border shadow-lg min-w-[200px] z-50"
-                  align="start"
-                  sideOffset={5}
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
-                >
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Link href="/stavebni-cinnost" className="w-full block py-1">
-                      Stavební činnost
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Link href="/autodoprava" className="w-full block py-1">
-                      Autodoprava
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Link href="/energetika" className="w-full block py-1">
-                      Energetika
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Link href="/zamerovani-budov" className="w-full block py-1">
-                      Zaměřování budov
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Link href="/ekostavby" className="w-full block py-1">
-                      Ekostavby
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Link href="/revize-elektriny" className="w-full block py-1">
-                      Revize elektřiny
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem className="cursor-pointer">
-                    <Link href="/uctovnictvi" className="w-full block py-1">
-                      Účetnictví
-                    </Link>
-                  </DropdownMenuItem>
-                </DropdownMenuContent>
-              </DropdownMenu>
+              <Link href="/stavebni-cinnost">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
+                  Stavební činnost
+                </span>
+              </Link>
               
-              <button
-                onClick={() => scrollToSection("portfolio")}
-                className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium"
-              >
-                Portfolio
-              </button>
-              <button
-                onClick={() => scrollToSection("about")}
-                className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium"
-              >
-                O nás
-              </button>
+              <Link href="/autodoprava">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
+                  Autodoprava
+                </span>
+              </Link>
+              
+              <Link href="/energetika">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
+                  Energetika
+                </span>
+              </Link>
+              
+              <Link href="/zamerovani-budov">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
+                  Zaměřování
+                </span>
+              </Link>
+              
+              <Link href="/ekostavby">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
+                  Ekostavby
+                </span>
+              </Link>
+              
+              <Link href="/revize-elektriny">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
+                  Revize
+                </span>
+              </Link>
+              
+              <Link href="/uctovnictvi">
+                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
+                  Účetnictví
+                </span>
+              </Link>
+              
               <Button
                 onClick={() => scrollToSection("contact")}
-                className="bg-primary text-primary-foreground hover:bg-accent"
+                className="bg-primary text-primary-foreground hover:bg-accent ml-2"
               >
                 Kontakt
               </Button>

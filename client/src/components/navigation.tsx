@@ -36,7 +36,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">EGN-STAV</div>
+            <img 
+              src="/attached_assets/EGN_stavby.webp" 
+              alt="EGN STAVBY s.r.o." 
+              className="h-10 w-auto"
+            />
           </div>
           
           <div className="hidden md:block">

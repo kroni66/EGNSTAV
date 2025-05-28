@@ -18,7 +18,11 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold text-primary">EGN-STAV</div>
+            <img 
+              src="/attached_assets/EGN_stavby.webp" 
+              alt="EGN STAVBY s.r.o." 
+              className="h-12 w-auto"
+            />
             <p className="text-muted leading-relaxed">
               Moderní stavební společnost s důrazem na kvalitu, 
               spolehlivost a spokojenost klientů.

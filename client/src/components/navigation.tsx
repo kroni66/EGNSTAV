@@ -8,6 +8,7 @@ import logoPath from "@assets/EGN_stavby.webp";
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isServicesOpen, setIsServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -56,11 +57,13 @@ export default function Navigation() {
                 </span>
               </Link>
               
-              <DropdownMenu>
+              <DropdownMenu open={isServicesOpen} onOpenChange={setIsServicesOpen}>
                 <DropdownMenuTrigger asChild>
                   <Button 
                     variant="ghost" 
                     className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium flex items-center h-auto font-normal"
+                    onMouseEnter={() => setIsServicesOpen(true)}
+                    onMouseLeave={() => setIsServicesOpen(false)}
                   >
                     Služby
                     <ChevronDown className="ml-1 h-4 w-4" />
@@ -70,6 +73,8 @@ export default function Navigation() {
                   className="bg-card border-border shadow-lg min-w-[200px] z-50"
                   align="start"
                   sideOffset={5}
+                  onMouseEnter={() => setIsServicesOpen(true)}
+                  onMouseLeave={() => setIsServicesOpen(false)}
                 >
                   <DropdownMenuItem className="cursor-pointer">
                     <Link href="/stavebni-cinnost" className="w-full block py-1">

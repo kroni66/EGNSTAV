@@ -57,43 +57,52 @@ export default function Navigation() {
               </Link>
               
               <DropdownMenu>
-                <DropdownMenuTrigger className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium flex items-center">
-                  Služby
-                  <ChevronDown className="ml-1 h-4 w-4" />
+                <DropdownMenuTrigger asChild>
+                  <Button 
+                    variant="ghost" 
+                    className="text-foreground hover:text-primary transition-colors duration-200 px-3 py-2 text-sm font-medium flex items-center h-auto font-normal"
+                  >
+                    Služby
+                    <ChevronDown className="ml-1 h-4 w-4" />
+                  </Button>
                 </DropdownMenuTrigger>
-                <DropdownMenuContent className="bg-card border-border">
-                  <DropdownMenuItem>
-                    <Link href="/stavebni-cinnost" className="w-full">
+                <DropdownMenuContent 
+                  className="bg-card border-border shadow-lg min-w-[200px] z-50"
+                  align="start"
+                  sideOffset={5}
+                >
+                  <DropdownMenuItem className="cursor-pointer">
+                    <Link href="/stavebni-cinnost" className="w-full block py-1">
                       Stavební činnost
                     </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/autodoprava" className="w-full">
+                  <DropdownMenuItem className="cursor-pointer">
+                    <Link href="/autodoprava" className="w-full block py-1">
                       Autodoprava
                     </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/energetika" className="w-full">
+                  <DropdownMenuItem className="cursor-pointer">
+                    <Link href="/energetika" className="w-full block py-1">
                       Energetika
                     </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/zamerovani-budov" className="w-full">
+                  <DropdownMenuItem className="cursor-pointer">
+                    <Link href="/zamerovani-budov" className="w-full block py-1">
                       Zaměřování budov
                     </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/ekostavby" className="w-full">
+                  <DropdownMenuItem className="cursor-pointer">
+                    <Link href="/ekostavby" className="w-full block py-1">
                       Ekostavby
                     </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/revize-elektriny" className="w-full">
+                  <DropdownMenuItem className="cursor-pointer">
+                    <Link href="/revize-elektriny" className="w-full block py-1">
                       Revize elektřiny
                     </Link>
                   </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/uctovnictvi" className="w-full">
+                  <DropdownMenuItem className="cursor-pointer">
+                    <Link href="/uctovnictvi" className="w-full block py-1">
                       Účetnictví
                     </Link>
                   </DropdownMenuItem>

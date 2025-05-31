@@ -124,8 +124,8 @@ export default function Ekostavby() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Ekologická stavba" 
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Moderní ekologická dřevostavba" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
             </div>

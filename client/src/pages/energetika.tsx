@@ -124,8 +124,8 @@ export default function Energetika() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Solární panely" 
+                src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Solární panely na střeše" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
             </div>

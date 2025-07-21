@@ -63,12 +63,7 @@ export default function Navigation() {
                 </span>
               </Link>
               
-              <Link href="/autodoprava">
-                <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
-                  Autodoprava
-                </span>
-              </Link>
-              
+
               <Link href="/energetika">
                 <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
                   Energetika
@@ -87,9 +82,9 @@ export default function Navigation() {
                 </span>
               </Link>
               
-              <Link href="/revize-elektriny">
+              <Link href="/montaze-klimatizaci">
                 <span className="text-foreground hover:text-primary transition-colors duration-200 px-2 py-2 text-sm font-medium cursor-pointer">
-                  Revize
+                  Klimatizace
                 </span>
               </Link>
               

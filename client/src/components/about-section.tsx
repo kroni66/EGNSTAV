@@ -82,7 +82,7 @@ export default function AboutSection() {
             
             <div className="absolute -top-6 -right-6 bg-card p-6 rounded-xl shadow-xl border border-border">
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">15+</div>
+                <div className="text-3xl font-bold text-primary mb-2">10+</div>
                 <div className="text-sm text-muted-foreground">Let zkušeností</div>
               </div>
             </div>

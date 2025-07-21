@@ -2,27 +2,27 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Truck, Package, Clock, MapPin, Shield, Users } from "lucide-react";
+import { ArrowRight, Snowflake, Wind, Thermometer, CheckCircle, Settings, Clock } from "lucide-react";
 
-export default function Autodoprava() {
+export default function MontazeKlimatizaci() {
   const services = [
     {
-      icon: Truck,
-      title: "Nákladní doprava",
-      description: "Přeprava stavebních materiálů a komponentů na staveniště s vlastním vozovým parkem.",
-      features: ["Nákladní vozidla do 40t", "Nakládací hydraulická ruka", "Rychlé dodání materiálu"]
+      icon: Settings,
+      title: "Montáž klimatizací",
+      description: "Profesionální instalace klimatizačních jednotek pro byty, domy i komerční prostory.",
+      features: ["Split klimatizace", "Multi-split systémy", "Mobilní jednotky"]
     },
     {
-      icon: Package,
-      title: "Speciální přeprava",
-      description: "Přeprava nadrozměrných a těžkých stavebních komponentů s potřebným povolením.",
-      features: ["Nadrozměrný náklad", "Těžká mechanizace", "Doprovodná vozidla"]
+      icon: Thermometer,
+      title: "Servis a údržba",
+      description: "Pravidelný servis a údržba klimatizačních zařízení pro optimální výkon.",
+      features: ["Čištění filtrů", "Kontrola chladiva", "Preventivní prohlídky"]
     },
     {
-      icon: MapPin,
-      title: "Místní rozvoz",
-      description: "Rychlé dodání materiálu v rámci města a okolí s možností časové koordinace.",
-      features: ["Expresní dodání", "Časové okno", "GPS tracking"]
+      icon: Wind,
+      title: "Ventilační systémy",
+      description: "Instalace a údržba ventilačních systémů pro kvalitní vzduch v interiéru.",
+      features: ["Rekuperace", "Vzduchotechnika", "Čištění vzduchu"]
     }
   ];
 
@@ -35,11 +35,11 @@ export default function Autodoprava() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Autodoprava
+              Montáže klimatizací
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Spolehlivé dopravní služby pro stavebnictví. Zajistíme rychlé a bezpečné 
-              dodání materiálu přímo na vaše staveniště.
+              Profesionální instalace a servis klimatizačních zařízení 
+              pro váš komfort po celý rok.
             </p>
           </div>
         </div>
@@ -49,9 +49,9 @@ export default function Autodoprava() {
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Naše dopravní služby</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Naše služby</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Moderní vozový park a zkušení řidiči pro všechny typy stavebních přeprav.
+              Kompletní péče o vaše klimatizační zařízení od instalace po servis.
             </p>
           </div>
           
@@ -84,39 +84,39 @@ export default function Autodoprava() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Why Air Conditioning Section */}
       <section className="py-24 bg-muted/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8">
-                Proč naše autodoprava
+                Výhody klimatizace
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <Clock className="w-8 h-8 text-primary mt-1 mr-4" />
+                  <Snowflake className="w-8 h-8 text-primary mt-1 mr-4" />
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Dodržení termínů</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Celoroční komfort</h3>
                     <p className="text-muted-foreground">
-                      Garantujeme včasné dodání materiálu podle domluvených termínů a časových oken.
+                      Chlazení v létě i vytápění v zimě pro maximální pohodlí.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Shield className="w-8 h-8 text-primary mt-1 mr-4" />
+                  <Wind className="w-8 h-8 text-primary mt-1 mr-4" />
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Pojištěná přeprava</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Čistý vzduch</h3>
                     <p className="text-muted-foreground">
-                      Veškerý převážený materiál je pojištěn proti poškození nebo ztrátě během přepravy.
+                      Filtrace vzduchu odstraňuje alergeny a znečišťující látky.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Users className="w-8 h-8 text-primary mt-1 mr-4" />
+                  <CheckCircle className="w-8 h-8 text-primary mt-1 mr-4" />
                   <div>
-                    <h3 className="text-xl font-semibold text-foreground mb-2">Zkušení řidiči</h3>
+                    <h3 className="text-xl font-semibold text-foreground mb-2">Energetická úspora</h3>
                     <p className="text-muted-foreground">
-                      Náš tým tvoří profesionální řidiči s dlouholetými zkušenostmi s přepravou stavebního materiálu.
+                      Moderní jednotky jsou velmi efektivní a šetří energie.
                     </p>
                   </div>
                 </div>
@@ -124,8 +124,8 @@ export default function Autodoprava() {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Nákladní vozidlo" 
+                src="https://images.unsplash.com/photo-1581092918484-8313d300c8cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="Instalace klimatizace" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
             </div>
@@ -137,17 +137,17 @@ export default function Autodoprava() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Potřebujete přepravu materiálu?
+            Potřebujete instalaci klimatizace?
           </h2>
           <p className="text-xl text-muted-foreground mb-8">
-            Kontaktujte nás pro cenovou nabídku dopravních služeb.
+            Kontaktujte nás pro bezplatnou konzultaci a cenovou nabídku.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg"
               className="bg-primary text-primary-foreground hover:bg-accent transition-all duration-300 font-semibold text-lg"
             >
-              Získat nabídku
+              Nezávazná poptávka
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button 
@@ -155,7 +155,7 @@ export default function Autodoprava() {
               size="lg"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-semibold text-lg"
             >
-              Zavolat: +420 987 654 321
+              Zavolat: +420 777 069 363
             </Button>
           </div>
         </div>

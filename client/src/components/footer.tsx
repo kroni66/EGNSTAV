@@ -133,11 +133,11 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-primary" />
-                <span className="text-sm">+420 123 456 789</span>
+                <span className="text-sm">+420 777 069 363</span>
               </div>
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2 text-primary" />
-                <span className="text-sm">info@egn-stav.cz</span>
+                <span className="text-sm">egnstavebni@email.cz</span>
               </div>
             </div>
           </div>

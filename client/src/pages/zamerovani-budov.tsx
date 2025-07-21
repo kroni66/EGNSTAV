@@ -155,7 +155,7 @@ export default function ZamerovaniBudov() {
               size="lg"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-semibold text-lg"
             >
-              Zavolat: +420 555 666 777
+              Zavolat: +420 777 069 363
             </Button>
           </div>
         </div>

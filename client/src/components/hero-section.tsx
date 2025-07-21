@@ -25,7 +25,7 @@ export default function HeroSection() {
             </h1>
             
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-xl">
-              Moderní stavební společnost s více než 15letými zkušenostmi. 
+              Moderní stavební společnost s více než 10letými zkušenostmi. 
               Specializujeme se na výstavbu rodinných domů, průmyslových objektů a rekonstrukce.
             </p>
             
@@ -54,7 +54,7 @@ export default function HeroSection() {
                 <div className="text-muted-foreground">Dokončených projektů</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-primary">15+</div>
+                <div className="text-3xl font-bold text-primary">10+</div>
                 <div className="text-muted-foreground">Let zkušeností</div>
               </div>
               <div className="text-center">

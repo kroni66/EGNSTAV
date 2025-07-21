@@ -69,17 +69,47 @@ export async function setupVite(app: Express, server: Server) {
 
 export function serveStatic(app: Express) {
   const distPath = path.resolve(import.meta.dirname, "public");
+  const indexPath = path.resolve(distPath, "index.html");
 
   if (!fs.existsSync(distPath)) {
-    throw new Error(
-      `Could not find the build directory: ${distPath}, make sure to build the client first`,
-    );
+    const errorMessage = `Production build directory not found: ${distPath}. Make sure to run 'npm run build'.`;
+    log(errorMessage, "server-static");
+    // Throwing an error here will stop the server from starting, which is appropriate
+    // if the main static asset directory is missing.
+    throw new Error(errorMessage);
   }
 
-  app.use(express.static(distPath));
+  if (!fs.existsSync(indexPath)) {
+    // Log this, but don't throw. The app might still function for API routes,
+    // or this might be an expected state in some scenarios.
+    // The catch-all route below will attempt to serve it, and fail, leading to a 404
+    // if the error handler is set up correctly.
+    log(`Warning: Main 'index.html' not found at ${indexPath}. SPA routing will likely fail.`, "server-static");
+  }
 
-  // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  app.use(express.static(distPath, {
+    // Ensure that if index.html is missing, express.static doesn't error out in a way
+    // that bypasses our later catch-all or error handlers.
+    // Default behavior is fine here, as it will call next() if index.html is not found for a directory request.
+  }));
+
+  // Fall through to index.html for SPA routing if no static file matched above
+  app.use("*", (req, res, next) => {
+    // Check again for index.html here, as it might have been created after server start (unlikely for prod builds)
+    // Or to ensure we handle its absence gracefully.
+    if (!fs.existsSync(indexPath)) {
+      const spaMessage = `index.html not found for SPA fallback (path: ${req.originalUrl}). Check build.`;
+      log(spaMessage, "server-static");
+      // Pass an error to the next error handler, which should result in a 404 or 500
+      const err = new Error(spaMessage) as any;
+      err.status = 404; // Indicate it's a "Not Found" type of error
+      return next(err);
+    }
+    res.sendFile(indexPath, (err) => {
+      if (err) {
+        log(`Error sending file ${indexPath}: ${err.message}`, "server-static");
+        next(err); // Pass error to the main error handler in server/index.ts
+      }
+    });
   });
 }

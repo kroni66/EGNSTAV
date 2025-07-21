@@ -6,11 +6,11 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import NotFound from "@/pages/not-found";
 import StavebniCinnost from "@/pages/stavebni-cinnost";
-import Autodoprava from "@/pages/autodoprava";
+
 import Energetika from "@/pages/energetika";
 import ZamerovaniBudov from "@/pages/zamerovani-budov";
 import Ekostavby from "@/pages/ekostavby";
-import RevizeElektriny from "@/pages/revize-elektriny";
+import MontazeKlimatizaci from "@/pages/montaze-klimatizaci";
 import Uctovnictvi from "@/pages/uctovnictvi";
 
 function Router() {
@@ -18,11 +18,11 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/stavebni-cinnost" component={StavebniCinnost} />
-      <Route path="/autodoprava" component={Autodoprava} />
+
       <Route path="/energetika" component={Energetika} />
       <Route path="/zamerovani-budov" component={ZamerovaniBudov} />
       <Route path="/ekostavby" component={Ekostavby} />
-      <Route path="/revize-elektriny" component={RevizeElektriny} />
+      <Route path="/montaze-klimatizaci" component={MontazeKlimatizaci} />
       <Route path="/uctovnictvi" component={Uctovnictvi} />
       <Route component={NotFound} />
     </Switch>

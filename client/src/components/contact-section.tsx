@@ -121,7 +121,7 @@ export default function ContactSection() {
                   <div>
                     <div className="font-semibold text-foreground mb-1">Telefon</div>
                     <div className="text-muted-foreground">
-                      <a href="tel:+420123456789" className="hover:text-primary transition-colors">+420 123 456 789</a>
+                      <a href="tel:+420777069363" className="hover:text-primary transition-colors">+420 777 069 363</a>
                     </div>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export default function ContactSection() {
                   <div>
                     <div className="font-semibold text-foreground mb-1">Email</div>
                     <div className="text-muted-foreground">
-                      <a href="mailto:info@egn-stav.cz" className="hover:text-primary transition-colors">info@egn-stav.cz</a>
+                      <a href="mailto:egnstavebni@email.cz" className="hover:text-primary transition-colors">egnstavebni@email.cz</a>
                     </div>
                   </div>
                 </div>
@@ -160,15 +160,15 @@ export default function ContactSection() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <span className="text-muted-foreground">Technický ředitel</span>
-                    <a href="tel:+420987654321" className="text-primary font-semibold hover:text-accent transition-colors">+420 987 654 321</a>
+                    <a href="tel:+420777069363" className="text-primary font-semibold hover:text-accent transition-colors">+420 777 069 363</a>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-muted-foreground">Obchodní ředitel</span>
-                    <a href="tel:+420111222333" className="text-primary font-semibold hover:text-accent transition-colors">+420 111 222 333</a>
+                    <a href="tel:+420777069363" className="text-primary font-semibold hover:text-accent transition-colors">+420 777 069 363</a>
                   </div>
                   <div className="flex items-center justify-between">
                     <span className="text-muted-foreground">Nonstop linka</span>
-                    <a href="tel:+420800123456" className="text-primary font-semibold hover:text-accent transition-colors">+420 800 123 456</a>
+                    <a href="tel:+420777069363" className="text-primary font-semibold hover:text-accent transition-colors">+420 777 069 363</a>
                   </div>
                 </div>
               </CardContent>
@@ -232,7 +232,7 @@ export default function ContactSection() {
                       <FormItem>
                         <FormLabel>Telefon</FormLabel>
                         <FormControl>
-                          <Input type="tel" placeholder="+420 123 456 789" {...field} />
+                          <Input type="tel" placeholder="+420 777 069 363" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

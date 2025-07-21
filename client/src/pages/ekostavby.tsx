@@ -2,7 +2,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Leaf, Recycle, Droplets, TreePine, Home, Award } from "lucide-react";
+import { ArrowRight, Leaf, Recycle, Droplets, Home, Award } from "lucide-react";
 
 export default function Ekostavby() {
   const services = [
@@ -12,12 +12,7 @@ export default function Ekostavby() {
       description: "Výstavba energeticky pasivních domů s minimální spotřebou energie.",
       features: ["Tepelná izolace", "Rekuperace vzduchu", "Kvalitní okna a dveře"]
     },
-    {
-      icon: TreePine,
-      title: "Dřevostavby",
-      description: "Ekologické stavění z obnovitelných přírodních materiálů.",
-      features: ["Certifikované dřevo", "Přírodní izolace", "Zdravé bydlení"]
-    },
+
     {
       icon: Droplets,
       title: "Hospodaření s vodou",
@@ -55,7 +50,7 @@ export default function Ekostavby() {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => {
               const Icon = service.icon;
               return (
@@ -125,7 +120,7 @@ export default function Ekostavby() {
             <div>
               <img 
                 src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Moderní ekologická dřevostavba" 
+                alt="Moderní ekologická stavba" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
               />
             </div>
@@ -155,7 +150,7 @@ export default function Ekostavby() {
               size="lg"
               className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-semibold text-lg"
             >
-              Zavolat: +420 222 333 444
+              Zavolat: +420 777 069 363
             </Button>
           </div>
         </div>

@@ -136,12 +136,7 @@ export default function Navigation() {
             >
               Služby
             </button>
-            <button
-              onClick={() => scrollToSection("portfolio")}
-              className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary w-full text-left"
-            >
-              Portfolio
-            </button>
+
             <button
               onClick={() => scrollToSection("about")}
               className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary w-full text-left"

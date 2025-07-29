@@ -94,14 +94,7 @@ export default function Footer() {
                   O nás
                 </button>
               </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection("portfolio")}
-                  className="text-muted hover:text-primary transition-colors text-left"
-                >
-                  Portfolio
-                </button>
-              </li>
+
               <li>
                 <button 
                   onClick={() => scrollToSection("contact")}

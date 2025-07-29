@@ -38,14 +38,7 @@ export default function HeroSection() {
                 Získat nabídku
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button 
-                onClick={() => scrollToSection("portfolio")}
-                variant="outline"
-                size="lg"
-                className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 font-semibold text-lg"
-              >
-                Naše projekty
-              </Button>
+
             </div>
             
             <div className="flex items-center space-x-8 pt-8">

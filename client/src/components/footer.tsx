@@ -122,7 +122,7 @@ export default function Footer() {
             <div className="space-y-2 text-muted">
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2 text-primary" />
-                <span className="text-sm">Stavební 123, Praha 1</span>
+                <span className="text-sm">Čujkovova 1714/21, 700 30 Ostrava</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2 text-primary" />

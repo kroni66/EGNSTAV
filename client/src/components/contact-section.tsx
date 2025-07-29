@@ -107,8 +107,8 @@ export default function ContactSection() {
                   <div>
                     <div className="font-semibold text-foreground mb-1">Adresa</div>
                     <div className="text-muted-foreground">
-                      Stavební 123<br />
-                      110 00 Praha 1<br />
+                      Čujkovova 1714/21<br />
+                      700 30 Ostrava<br />
                       Česká republika
                     </div>
                   </div>

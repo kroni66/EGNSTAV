@@ -1,5 +1,5 @@
 import { storage } from '../server/storage.js';
-import { insertContactSubmissionSchema } from '../shared/schema.js';
+import { insertContactSubmissionSchema } from '../shared/zod-schemas.js';
 import { z } from 'zod';
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 

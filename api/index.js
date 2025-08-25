@@ -1,6 +1,6 @@
 import express from "express";
 import { storage } from "../server/storage.js";
-import { insertContactSubmissionSchema } from "../shared/schema.js";
+import { insertContactSubmissionSchema } from "../shared/zod-schemas.js";
 import { z } from "zod";
 
 const app = express();

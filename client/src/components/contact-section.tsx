@@ -13,7 +13,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "
 import { MapPin, Phone, Mail, Clock, Send } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
-import { insertContactSubmissionSchema } from "@shared/schema";
+import { insertContactSubmissionSchema } from "@shared/zod-schemas";
 
 const contactFormSchema = insertContactSubmissionSchema.extend({
   firstName: z.string().min(1, "Jméno je povinné"),

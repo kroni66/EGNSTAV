@@ -78,6 +78,9 @@ export default function AboutSection() {
               src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
               alt="Professional construction team" 
               className="rounded-2xl shadow-2xl w-full h-auto" 
+              loading="lazy"
+              width="800"
+              height="600"
             />
             
             <div className="absolute -top-6 -right-6 bg-card p-6 rounded-xl shadow-xl border border-border">

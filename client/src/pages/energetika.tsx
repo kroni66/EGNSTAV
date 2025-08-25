@@ -127,6 +127,9 @@ export default function Energetika() {
                 src="https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
                 alt="Solární panely na střeše" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
+                loading="lazy"
+                width="800"
+                height="600"
               />
             </div>
           </div>

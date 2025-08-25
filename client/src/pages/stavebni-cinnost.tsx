@@ -138,6 +138,9 @@ export default function StavebniCinnost() {
                 src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
                 alt="Stavební tým" 
                 className="rounded-2xl shadow-2xl w-full h-auto" 
+                loading="lazy"
+                width="800"
+                height="600"
               />
             </div>
           </div>

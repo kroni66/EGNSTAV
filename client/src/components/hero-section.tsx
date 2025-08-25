@@ -62,6 +62,9 @@ export default function HeroSection() {
               src="https://images.unsplash.com/photo-1541976590-713941681591?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
               alt="Modern construction site" 
               className="rounded-2xl shadow-2xl w-full h-auto" 
+              loading="lazy"
+              width="800"
+              height="600"
             />
             
             <div className="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-xl border border-border">
